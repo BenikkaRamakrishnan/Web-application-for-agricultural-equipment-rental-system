@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Equipment Products</title>
+    <link href="rentalshowstyle.css" rel="stylesheet">
+    <script src="rental.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Agricultural Equipment Rental System</h1>
+    </header>
+
+    <article>
+        <div class="equipment">
+            <img src="assets/img/john deere 75 hp tractor.jpeg" alt="Tractor" class="CarShow" title="Tractor" onclick="openModal(this.src)">
+            <div class="equipment-details">
+                <strong class="cartitle">John Deere 5075E Tractor</strong><br>
+                <p>Reliable and powerful, the John Deere 5075E is perfect for various farming tasks. Equipped with advanced features for enhanced performance and efficiency.</p>
+                <p><strong>Rental Price:</strong> $150/day</p>
+                <a class="button" href="rental details.html" target="new_window">Book Now</a>
+            </div>
+        </div>
+
+        <div class="equipment">
+            <img src="assets/img/Case IH Axial-Flow 140 Series Harvester.jpeg" alt="Harvester" class="CarShow" title="Harvester" onclick="openModal(this.src)">
+            <div class="equipment-details">
+                <strong class="cartitle">Case IH Axial-Flow 140 Series Harvester</strong><br>
+                <p>High-performance harvester for efficient grain harvesting. Features advanced technology for optimal yield and quality.</p>
+                <p><strong>Rental Price:</strong> $250/day</p>
+                <a class="button" href="rental details.html" target="new_window">Book Now</a>
+            </div>
+        </div>
+
+        <div class="equipment">
+            <img src="assets/img/Kverneland EG 100 Plow.jpeg" alt="Plow" class="CarShow" title="Plow" onclick="openModal(this.src)">
+            <div class="equipment-details">
+                <strong class="cartitle">Kverneland EG 100 Plow</strong><br>
+                <p>Durable and efficient plow designed for heavy-duty fieldwork. Provides excellent soil penetration and turnover.</p>
+                <p><strong>Rental Price:</strong> $100/day</p>
+                <a class="button" href="rental details.html" target="new_window">Book Now</a>
+            </div>
+        </div>
+
+        <div class="equipment">
+            <img src="assets/img/John Deere R4045 Sprayer.jpeg" alt="Sprayer" class="CarShow" title="Sprayer" onclick="openModal(this.src)">
+            <div class="equipment-details">
+                <strong class="cartitle">John Deere R4045 Sprayer</strong><br>
+                <p>Advanced sprayer for precise and efficient application of fertilizers and pesticides. Features a large tank and high-performance boom.</p>
+                <p><strong>Rental Price:</strong> $200/day</p>
+                <a class="button" href="rental details.html" target="new_window">Book Now</a>
+            </div>
+        </div>
+        <div class="equipment">
+            <img src="assets/img/New Holland BigBaler 1290.jpeg" alt="Baler" class="CarShow" title="Baler" onclick="openModal(this.src)">
+            <div class="equipment-details">
+                <strong class="cartitle">New Holland BigBaler 1290</strong><br>
+                <p>Efficient and reliable baler for producing high-density bales. Features advanced technology for enhanced performance.</p>
+                <p><strong>Rental Price:</strong> $180/day</p>
+                <a class="button" href="rental details.html" target="new_window">Book Now</a>
+            </div>
+        </div>
+
+        <div class="equipment">
+            <img src="assets/img/Kubota RTV-X1140.jpeg" alt="Utility Vehicle" class="CarShow" title="Utility Vehicle" onclick="openModal(this.src)">
+            <div class="equipment-details">
+                <strong class="cartitle">Kubota RTV-X1140</strong><br>
+                <p>Versatile utility vehicle for various agricultural tasks. Features robust design and advanced technology for superior performance.</p>
+                <p><strong>Rental Price:</strong> $120/day</p>
+                <a class="button" href="rental details.html" target="new_window">Book Now</a>
+            </div>
+        </div>
+
+        <div class="equipment">
+            <img src="assets/img/Claas Lexion 780.jpeg" alt="Combine Harvester" class="CarShow" title="Combine Harvester" onclick="openModal(this.src)">
+            <div class="equipment-details">
+                <strong class="cartitle">Claas Lexion 780</strong><br>
+                <p>High-capacity combine harvester for efficient grain harvesting. Features advanced technology for optimal performance and yield.</p>
+                <p><strong>Rental Price:</strong> $300/day</p>
+                <a class="button" href="rental details.html" target="new_window">Book Now</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Modal for zooming images -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="zoomedImage">
+    </div>
+
+   
+</body>
+</html>

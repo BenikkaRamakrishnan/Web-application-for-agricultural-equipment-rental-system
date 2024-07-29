@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Equipment Rental System - Contact Us</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #23d33b;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #111c15;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        /* Main section styles */
+        section {
+            padding: 2rem;
+            margin: 20px auto;
+            background-color: #c8dbd7;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            max-width: 800px;
+        }
+        
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        section p {
+            color: #666;
+        }
+        
+        /* Contact section styles */
+        #contact .contact-info {
+            margin-top: 1.5rem;
+        }
+        
+        #contact .contact-info p {
+            margin: 0;
+            padding: 0.5rem 0;
+        }
+        
+        #contact .contact-info strong {
+            color: #333;
+        }
+        
+        #contact .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        #contact .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Contact form styles */
+        .contact-form {
+            margin-top: 2rem;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .contact-form button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Map styles */
+        #map {
+            height: 300px;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agricultural Equipment Rental System</h1>
+    </header>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Here's how you can reach us and find out more about our agricultural equipment rental services:</p>
+        
+        <div class="contact-info">
+            <p><strong>Website:</strong> <a href="http://www.yourwebsite.com">www.yourwebsite.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><strong>Address:</strong> 123 Farm Road, Agriculture Town, Country</p>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Google Maps API -->
+    <script>
+        function initMap() {
+            var location
