@@ -4,7 +4,7 @@
  */
  
 $databaseHost = 'localhost';
-$databaseName = 'beni';
+$databaseName = 'form';
 $databaseUsername = 'root';
 $databasePassword = '';
 
