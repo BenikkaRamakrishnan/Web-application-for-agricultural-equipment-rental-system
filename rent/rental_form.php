@@ -24,6 +24,6 @@
 		$result = mysqli_query($mysqli, "INSERT INTO rent(title,firstname,surname,email,phonenumber,streetaddress,city,postcode,rental_duration,startdate,enddate,cartype,addons) VALUES('$title','$firstname','$surname','$email','$phonenumber','$streetaddress','$city','$postcode','$rental_duration,'$startdate','$enddate','$cartype','$addons')");
 		
 		// Show message when user added
-	   echo "rent equipment added successfully. <a href='./index.php'>View Users</a>";
+	   echo "rent equipment added successfully.";
  	}
 	?>
